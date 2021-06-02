@@ -1,5 +1,36 @@
-EESchema Schematic File Version 4
-EELAYER 30 0
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:conn
+LIBS:PSLab
+LIBS:PSLab-cache
+EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -14,7 +45,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L PSLab-rescue:MCP2200 U1
+L MCP2200 U1
 U 1 1 542159EC
 P 3200 1700
 F 0 "U1" H 3200 1500 50  0000 C CNN
@@ -25,7 +56,7 @@ F 3 "DOCUMENTATION" H 3200 1700 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L PSLab-rescue:R-RESCUE-proto1 R1
+L R-RESCUE-proto1 R1
 U 1 1 542164DA
 P 4855 815
 F 0 "R1" V 4755 815 40  0000 C CNN
@@ -38,7 +69,7 @@ $EndComp
 Text Label 5105 815  0    60   ~ 0
 Vdd
 $Comp
-L PSLab-rescue:C-RESCUE-proto1 C1
+L C-RESCUE-proto1 C1
 U 1 1 54216998
 P 3250 650
 F 0 "C1" H 3250 750 40  0000 L CNN
@@ -49,7 +80,7 @@ F 3 "" H 3250 650 60  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L PSLab-rescue:GND-RESCUE-proto1 #PWR01
+L GND-RESCUE-proto1 #PWR01
 U 1 1 542169DF
 P 3450 650
 F 0 "#PWR01" H 3450 650 30  0001 C CNN
@@ -60,7 +91,7 @@ F 3 "" H 3450 650 60  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L PSLab-rescue:C-RESCUE-proto1 C5
+L C-RESCUE-proto1 C5
 U 1 1 54216A58
 P 2550 2600
 F 0 "C5" H 2550 2700 40  0000 L CNN
@@ -71,7 +102,7 @@ F 3 "" H 2550 2600 60  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L PSLab-rescue:GND-RESCUE-proto1 #PWR02
+L GND-RESCUE-proto1 #PWR02
 U 1 1 54216AA0
 P 2350 2600
 F 0 "#PWR02" H 2350 2600 30  0001 C CNN
@@ -86,7 +117,7 @@ MCLR
 Text Label 4850 2425 3    60   ~ 0
 Vdd
 $Comp
-L PSLab-rescue:FUSE F1
+L FUSE F1
 U 1 1 54225B8E
 P 1355 1930
 F 0 "F1" H 1455 1980 40  0000 C CNN
@@ -99,7 +130,7 @@ $EndComp
 Text GLabel 850  2175 3    60   Input ~ 0
 +5V
 $Comp
-L PSLab-rescue:GND-RESCUE-proto1 #PWR03
+L GND-RESCUE-proto1 #PWR03
 U 1 1 5422B7D0
 P 3650 3900
 F 0 "#PWR03" H 3650 3900 30  0001 C CNN
@@ -110,7 +141,7 @@ F 3 "" H 3650 3900 60  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L PSLab-rescue:GND-RESCUE-proto1 #PWR04
+L GND-RESCUE-proto1 #PWR04
 U 1 1 5422D8C1
 P 4950 2450
 F 0 "#PWR04" H 4950 2450 30  0001 C CNN
@@ -123,7 +154,7 @@ $EndComp
 Text Label 915  6020 0    60   ~ 0
 +5V
 $Comp
-L PSLab-rescue:GND-RESCUE-proto1 #PWR05
+L GND-RESCUE-proto1 #PWR05
 U 1 1 54230D4C
 P 870 6490
 F 0 "#PWR05" H 870 6490 30  0001 C CNN
@@ -134,7 +165,7 @@ F 3 "" H 870 6490 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L PSLab-rescue:GND-RESCUE-proto1 #PWR06
+L GND-RESCUE-proto1 #PWR06
 U 1 1 54232636
 P 2195 6475
 F 0 "#PWR06" H 2195 6475 30  0001 C CNN
@@ -147,7 +178,7 @@ $EndComp
 Text GLabel 2195 5905 1    47   Input ~ 0
 Vdd
 $Comp
-L PSLab-rescue:R-RESCUE-proto1 R10
+L R-RESCUE-proto1 R10
 U 1 1 542328AA
 P 6500 4200
 F 0 "R10" V 6425 4200 40  0000 C CNN
@@ -158,7 +189,7 @@ F 3 "" H 6500 4200 30  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L PSLab-rescue:R-RESCUE-proto1 R7
+L R-RESCUE-proto1 R7
 U 1 1 542393BE
 P 2210 4650
 F 0 "R7" V 2290 4650 40  0000 C CNN
@@ -169,7 +200,7 @@ F 3 "" H 2210 4650 30  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L PSLab-rescue:R-RESCUE-proto1 R6
+L R-RESCUE-proto1 R6
 U 1 1 54239455
 P 2205 4450
 F 0 "R6" V 2285 4450 40  0000 C CNN
@@ -180,7 +211,7 @@ F 3 "" H 2205 4450 30  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L PSLab-rescue:GND-RESCUE-proto1 #PWR07
+L GND-RESCUE-proto1 #PWR07
 U 1 1 5423C9C8
 P 4850 5200
 F 0 "#PWR07" H 4850 5200 30  0001 C CNN
@@ -191,7 +222,7 @@ F 3 "" H 4850 5200 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L PSLab-rescue:C-RESCUE-proto1 C17
+L C-RESCUE-proto1 C17
 U 1 1 5423CB04
 P 4950 5700
 F 0 "C17" H 4950 5800 40  0000 L CNN
@@ -202,7 +233,7 @@ F 3 "" H 4950 5700 60  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L PSLab-rescue:GND-RESCUE-proto1 #PWR08
+L GND-RESCUE-proto1 #PWR08
 U 1 1 5423CBAF
 P 4950 5900
 F 0 "#PWR08" H 4950 5900 30  0001 C CNN
@@ -215,7 +246,7 @@ $EndComp
 Text Label 4950 5250 3    60   ~ 0
 AVdd
 $Comp
-L PSLab-rescue:GND-RESCUE-proto1 #PWR09
+L GND-RESCUE-proto1 #PWR09
 U 1 1 542405A3
 P 6250 3800
 F 0 "#PWR09" H 6250 3800 30  0001 C CNN
@@ -226,7 +257,7 @@ F 3 "" H 6250 3800 60  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L PSLab-rescue:C-RESCUE-proto1 C13
+L C-RESCUE-proto1 C13
 U 1 1 542407CC
 P 6725 3900
 F 0 "C13" V 6675 3975 40  0000 L CNN
@@ -237,7 +268,7 @@ F 3 "" H 6725 3900 60  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L PSLab-rescue:GND-RESCUE-proto1 #PWR010
+L GND-RESCUE-proto1 #PWR010
 U 1 1 54240843
 P 6925 3900
 F 0 "#PWR010" H 6925 3900 30  0001 C CNN
@@ -250,7 +281,7 @@ $EndComp
 Text Label 6500 3900 2    60   ~ 0
 Vdd
 $Comp
-L PSLab-rescue:C-RESCUE-proto1 C4
+L C-RESCUE-proto1 C4
 U 1 1 5425178F
 P 4850 2225
 F 0 "C4" V 4900 2300 40  0000 L CNN
@@ -261,7 +292,7 @@ F 3 "" H 4850 2225 60  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L PSLab-rescue:GND-RESCUE-proto1 #PWR011
+L GND-RESCUE-proto1 #PWR011
 U 1 1 542519ED
 P 4850 2025
 F 0 "#PWR011" H 4850 2025 30  0001 C CNN
@@ -282,7 +313,7 @@ F0 "I/O Processing" 60
 F1 "IO.sch" 60
 $EndSheet
 $Comp
-L PSLab-rescue:GND-RESCUE-proto1 #PWR012
+L GND-RESCUE-proto1 #PWR012
 U 1 1 54287C9F
 P 2750 950
 F 0 "#PWR012" H 2750 950 30  0001 C CNN
@@ -301,7 +332,7 @@ NoConn ~ 3550 2450
 NoConn ~ 3450 2450
 NoConn ~ 3350 2450
 $Comp
-L PSLab-rescue:CONN_1 MH1
+L CONN_1 MH1
 U 1 1 542435DB
 P 9865 5390
 F 0 "MH1" V 9925 5330 40  0000 L CNN
@@ -312,7 +343,7 @@ F 3 "" H 9865 5390 60  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L PSLab-rescue:CONN_1 MH3
+L CONN_1 MH3
 U 1 1 54243FB2
 P 10480 5385
 F 0 "MH3" V 10540 5320 40  0000 L CNN
@@ -323,7 +354,7 @@ F 3 "" H 10480 5385 60  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L PSLab-rescue:CONN_1 MH4
+L CONN_1 MH4
 U 1 1 5424401D
 P 10785 5385
 F 0 "MH4" V 10850 5340 40  0000 L CNN
@@ -334,7 +365,7 @@ F 3 "" H 10785 5385 60  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L power:PWR_FLAG #FLG013
+L PWR_FLAG #FLG013
 U 1 1 54284FB3
 P 850 1930
 F 0 "#FLG013" H 850 2025 30  0001 C CNN
@@ -345,7 +376,7 @@ F 3 "" H 850 1930 60  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L PSLab-rescue:C-RESCUE-proto1 C20
+L C-RESCUE-proto1 C20
 U 1 1 54230C78
 P 870 6260
 F 0 "C20" H 870 6360 40  0000 L CNN
@@ -356,7 +387,7 @@ F 3 "" H 870 6260 60  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L PSLab-rescue:GND-RESCUE-proto1 #PWR014
+L GND-RESCUE-proto1 #PWR014
 U 1 1 54668FB6
 P 1495 6320
 F 0 "#PWR014" H 1495 6320 30  0001 C CNN
@@ -369,7 +400,7 @@ $EndComp
 NoConn ~ 3250 2450
 NoConn ~ 3150 2450
 $Comp
-L PSLab-rescue:C-RESCUE-proto1 C9
+L C-RESCUE-proto1 C9
 U 1 1 546BBA2A
 P 2750 3350
 F 0 "C9" H 2750 3450 40  0000 L CNN
@@ -382,7 +413,7 @@ $EndComp
 Text Label 2645 2450 2    60   ~ 0
 Vdd
 $Comp
-L PSLab-rescue:GND-RESCUE-proto1 #PWR015
+L GND-RESCUE-proto1 #PWR015
 U 1 1 54C7E144
 P 2950 3350
 F 0 "#PWR015" H 2950 3350 30  0001 C CNN
@@ -393,7 +424,7 @@ F 3 "" H 2950 3350 60  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L power:PWR_FLAG #FLG016
+L PWR_FLAG #FLG016
 U 1 1 54C819ED
 P 860 1040
 F 0 "#FLG016" H 860 1135 30  0001 C CNN
@@ -404,7 +435,7 @@ F 3 "" H 860 1040 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L PSLab-rescue:R-RESCUE-proto1 R3
+L R-RESCUE-proto1 R3
 U 1 1 5421BF10
 P 7000 2850
 F 0 "R3" V 7080 2850 40  0000 C CNN
@@ -415,7 +446,7 @@ F 3 "" H 7000 2850 30  0000 C CNN
 	0    -1   1    0   
 $EndComp
 $Comp
-L PSLab-rescue:R-RESCUE-proto1 R2
+L R-RESCUE-proto1 R2
 U 1 1 5421BED8
 P 7000 2625
 F 0 "R2" V 7080 2625 40  0000 C CNN
@@ -440,7 +471,7 @@ D-
 Text Label 2500 825  0    60   ~ 0
 D+
 $Comp
-L PSLab-rescue:R-RESCUE-proto1 R8
+L R-RESCUE-proto1 R8
 U 1 1 555DB0AF
 P 2210 4850
 F 0 "R8" V 2290 4850 40  0000 C CNN
@@ -451,7 +482,7 @@ F 3 "" H 2210 4850 30  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L PSLab-rescue:R-RESCUE-proto1 R9
+L R-RESCUE-proto1 R9
 U 1 1 555DB131
 P 2215 5050
 F 0 "R9" V 2295 5050 40  0000 C CNN
@@ -462,7 +493,7 @@ F 3 "" H 2215 5050 30  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L PSLab-rescue:GND-RESCUE-proto1 #PWR017
+L GND-RESCUE-proto1 #PWR017
 U 1 1 555DBA3A
 P 3550 5050
 F 0 "#PWR017" H 3550 5050 30  0001 C CNN
@@ -489,7 +520,7 @@ V-
 Text GLabel 10030 2800 2    60   Input ~ 0
 V+
 $Comp
-L PSLab-rescue:TC1240A U4
+L TC1240A U4
 U 1 1 55651DFC
 P 8575 2800
 F 0 "U4" H 8375 3125 50  0000 C CNN
@@ -500,7 +531,7 @@ F 3 "DOCUMENTATION" H 8575 2600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L PSLab-rescue:7660 U5
+L 7660 U5
 U 1 1 55651F0B
 P 8700 4250
 F 0 "U5" H 8525 4650 50  0000 C CNN
@@ -511,7 +542,7 @@ F 3 "DOCUMENTATION" H 8700 4250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L PSLab-rescue:CAPAPOL C14
+L CAPAPOL C14
 U 1 1 55652238
 P 8550 3325
 F 0 "C14" H 8600 3425 40  0000 L CNN
@@ -522,7 +553,7 @@ F 3 "" H 8550 3325 300 0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L PSLab-rescue:GND-RESCUE-proto1 #PWR018
+L GND-RESCUE-proto1 #PWR018
 U 1 1 5565563B
 P 8025 2800
 F 0 "#PWR018" H 8025 2800 30  0001 C CNN
@@ -533,7 +564,7 @@ F 3 "" H 8025 2800 60  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L PSLab-rescue:GND-RESCUE-proto1 #PWR019
+L GND-RESCUE-proto1 #PWR019
 U 1 1 55655703
 P 9125 2900
 F 0 "#PWR019" H 9125 2900 30  0001 C CNN
@@ -544,7 +575,7 @@ F 3 "" H 9125 2900 60  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L PSLab-rescue:CAPAPOL C11
+L CAPAPOL C11
 U 1 1 55655892
 P 9425 2600
 F 0 "C11" H 9475 2700 40  0000 L CNN
@@ -555,7 +586,7 @@ F 3 "" H 9425 2600 300 0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L PSLab-rescue:CAPAPOL C16
+L CAPAPOL C16
 U 1 1 55656708
 P 8050 4400
 F 0 "C16" H 8100 4500 40  0000 L CNN
@@ -566,7 +597,7 @@ F 3 "" H 8050 4400 300 0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L PSLab-rescue:GND-RESCUE-proto1 #PWR020
+L GND-RESCUE-proto1 #PWR020
 U 1 1 55656B9E
 P 8350 4300
 F 0 "#PWR020" H 8350 4300 30  0001 C CNN
@@ -580,7 +611,7 @@ NoConn ~ 9050 4300
 NoConn ~ 8350 4100
 NoConn ~ 9050 4200
 $Comp
-L PSLab-rescue:CAPAPOL C18
+L CAPAPOL C18
 U 1 1 55656E39
 P 9300 4600
 F 0 "C18" H 9350 4700 40  0000 L CNN
@@ -591,7 +622,7 @@ F 3 "" H 9300 4600 300 0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L PSLab-rescue:GND-RESCUE-proto1 #PWR021
+L GND-RESCUE-proto1 #PWR021
 U 1 1 55656EF9
 P 9300 4800
 F 0 "#PWR021" H 9300 4800 30  0001 C CNN
@@ -602,7 +633,7 @@ F 3 "" H 9300 4800 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L PSLab-rescue:R-RESCUE-proto1 R4
+L R-RESCUE-proto1 R4
 U 1 1 55657273
 P 9675 2800
 F 0 "R4" V 9755 2800 40  0000 C CNN
@@ -613,7 +644,7 @@ F 3 "" H 9675 2800 30  0000 C CNN
 	0    1    -1   0   
 $EndComp
 $Comp
-L PSLab-rescue:R-RESCUE-proto1 R13
+L R-RESCUE-proto1 R13
 U 1 1 5565746E
 P 9620 4400
 F 0 "R13" V 9700 4400 40  0000 C CNN
@@ -624,7 +655,7 @@ F 3 "" H 9620 4400 30  0000 C CNN
 	0    1    -1   0   
 $EndComp
 $Comp
-L PSLab-rescue:CAPAPOL C19
+L CAPAPOL C19
 U 1 1 55657766
 P 9870 4600
 F 0 "C19" H 9920 4700 40  0000 L CNN
@@ -635,7 +666,7 @@ F 3 "" H 9870 4600 300 0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L PSLab-rescue:GND-RESCUE-proto1 #PWR022
+L GND-RESCUE-proto1 #PWR022
 U 1 1 55657CF8
 P 9870 4830
 F 0 "#PWR022" H 9870 4830 30  0001 C CNN
@@ -646,7 +677,7 @@ F 3 "" H 9870 4830 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L PSLab-rescue:CAPAPOL C12
+L CAPAPOL C12
 U 1 1 55657D48
 P 9925 2600
 F 0 "C12" H 9975 2700 40  0000 L CNN
@@ -657,7 +688,7 @@ F 3 "" H 9925 2600 300 0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L PSLab-rescue:GND-RESCUE-proto1 #PWR023
+L GND-RESCUE-proto1 #PWR023
 U 1 1 556582CF
 P 9425 2400
 F 0 "#PWR023" H 9425 2400 30  0001 C CNN
@@ -668,7 +699,7 @@ F 3 "" H 9425 2400 60  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L PSLab-rescue:GND-RESCUE-proto1 #PWR024
+L GND-RESCUE-proto1 #PWR024
 U 1 1 556583F2
 P 9925 2400
 F 0 "#PWR024" H 9925 2400 30  0001 C CNN
@@ -681,7 +712,7 @@ $EndComp
 Text Label 3050 725  3    60   ~ 0
 Vdd
 $Comp
-L PSLab-rescue:ESP8266 U15
+L ESP8266 U15
 U 1 1 55653BB1
 P 9050 1425
 F 0 "U15" H 9450 1975 50  0000 C CNN
@@ -694,7 +725,7 @@ $EndComp
 Text Label 8500 1725 0    60   ~ 0
 Vdd
 $Comp
-L PSLab-rescue:GND-RESCUE-proto1 #PWR025
+L GND-RESCUE-proto1 #PWR025
 U 1 1 5565481F
 P 9600 1725
 F 0 "#PWR025" H 9600 1725 30  0001 C CNN
@@ -705,7 +736,7 @@ F 3 "" H 9600 1725 60  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L PSLab-rescue:GND-RESCUE-proto1 #PWR026
+L GND-RESCUE-proto1 #PWR026
 U 1 1 55654875
 P 9600 1625
 F 0 "#PWR026" H 9600 1625 30  0001 C CNN
@@ -724,7 +755,7 @@ NoConn ~ 8900 1325
 NoConn ~ 8900 1125
 NoConn ~ 8900 1025
 $Comp
-L power:PWR_FLAG #FLG027
+L PWR_FLAG #FLG027
 U 1 1 5565B707
 P 9665 3025
 F 0 "#FLG027" H 9665 3120 30  0001 C CNN
@@ -735,7 +766,7 @@ F 3 "" H 9665 3025 60  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L power:PWR_FLAG #FLG028
+L PWR_FLAG #FLG028
 U 1 1 5565BB56
 P 9665 4135
 F 0 "#FLG028" H 9665 4230 30  0001 C CNN
@@ -746,7 +777,7 @@ F 3 "" H 9665 4135 60  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L PSLab-rescue:GND-RESCUE-proto1 #PWR029
+L GND-RESCUE-proto1 #PWR029
 U 1 1 556DA4CB
 P 860 1520
 F 0 "#PWR029" H 860 1520 30  0001 C CNN
@@ -757,7 +788,7 @@ F 3 "" H 860 1520 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L PSLab-rescue:GND-RESCUE-proto1 #PWR030
+L GND-RESCUE-proto1 #PWR030
 U 1 1 556DA5BD
 P 1860 1040
 F 0 "#PWR030" H 1860 1040 30  0001 C CNN
@@ -768,7 +799,7 @@ F 3 "" H 1860 1040 60  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L PSLab-rescue:74HC126 U2
+L 74HC126 U2
 U 1 1 556EFFC0
 P 1800 3750
 F 0 "U2" H 2200 4300 50  0000 C CNN
@@ -779,7 +810,7 @@ F 3 "_" V 1925 3575 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L PSLab-rescue:GND-RESCUE-proto1 #PWR031
+L GND-RESCUE-proto1 #PWR031
 U 1 1 556E8AA8
 P 1650 3950
 F 0 "#PWR031" H 1650 3950 30  0001 C CNN
@@ -794,7 +825,7 @@ Text GLabel 2505 3210 2    40   Input ~ 0
 Text GLabel 5450 5200 3    47   Input ~ 0
 CH1out
 $Comp
-L PSLab-rescue:R-RESCUE-proto1 R12
+L R-RESCUE-proto1 R12
 U 1 1 5425924D
 P 7300 4100
 F 0 "R12" V 7225 4225 40  0000 C CNN
@@ -819,7 +850,7 @@ SDA
 Text Label 4760 7285 2    60   ~ 0
 SCL
 $Comp
-L PSLab-rescue:GND-RESCUE-proto1 #PWR032
+L GND-RESCUE-proto1 #PWR032
 U 1 1 55B40810
 P 4760 7085
 F 0 "#PWR032" H 4760 7085 30  0001 C CNN
@@ -830,7 +861,7 @@ F 3 "" H 4760 7085 60  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L device:Crystal X1
+L Crystal X1
 U 1 1 55B8ABCA
 P 7050 3400
 F 0 "X1" H 6825 3325 60  0000 C CNN
@@ -841,7 +872,7 @@ F 3 "" H 7050 3400 60  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L PSLab-rescue:C-RESCUE-proto1 C8
+L C-RESCUE-proto1 C8
 U 1 1 55B8B5E2
 P 7250 3100
 F 0 "C8" H 7250 3200 40  0000 L CNN
@@ -852,7 +883,7 @@ F 3 "" H 7250 3100 60  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L PSLab-rescue:C-RESCUE-proto1 C10
+L C-RESCUE-proto1 C10
 U 1 1 55B8B9EB
 P 7250 3700
 F 0 "C10" H 7250 3800 40  0000 L CNN
@@ -863,7 +894,7 @@ F 3 "" H 7250 3700 60  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L PSLab-rescue:GND-RESCUE-proto1 #PWR033
+L GND-RESCUE-proto1 #PWR033
 U 1 1 55B8BA87
 P 7450 3100
 F 0 "#PWR033" H 7450 3100 30  0001 C CNN
@@ -874,7 +905,7 @@ F 3 "" H 7450 3100 60  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L PSLab-rescue:GND-RESCUE-proto1 #PWR034
+L GND-RESCUE-proto1 #PWR034
 U 1 1 55B8BAE6
 P 7450 3700
 F 0 "#PWR034" H 7450 3700 30  0001 C CNN
@@ -885,7 +916,7 @@ F 3 "" H 7450 3700 60  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L PSLab:LM1117-3.3-RESCUE-PSLab U6
+L LM1117-3.3-RESCUE-PSLab U6
 U 1 1 55B81ABD
 P 1495 6170
 F 0 "U6" H 1295 6120 60  0000 C CNN
@@ -908,7 +939,7 @@ PGD2
 Text GLabel 5370 7380 0    40   Input ~ 0
 PGC2
 $Comp
-L PSLab-rescue:GND-RESCUE-proto1 #PWR035
+L GND-RESCUE-proto1 #PWR035
 U 1 1 55BA6E7D
 P 6695 7525
 F 0 "#PWR035" H 6695 7525 30  0001 C CNN
@@ -919,7 +950,7 @@ F 3 "" H 6695 7525 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L PSLab-rescue:R-RESCUE-proto1 R5
+L R-RESCUE-proto1 R5
 U 1 1 55BABAB3
 P 10360 3310
 F 0 "R5" V 10440 3310 40  0000 C CNN
@@ -930,7 +961,7 @@ F 3 "" H 10360 3310 30  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L PSLab-rescue:R-RESCUE-proto1 R11
+L R-RESCUE-proto1 R11
 U 1 1 55BABE2E
 P 10385 4400
 F 0 "R11" V 10465 4400 40  0000 C CNN
@@ -941,7 +972,7 @@ F 3 "" H 10385 4400 30  0000 C CNN
 	1    0    0    1   
 $EndComp
 $Comp
-L PSLab-rescue:ZENERsmall-RESCUE-proto1 D1
+L ZENERsmall-RESCUE-proto1 D1
 U 1 1 55BABFCA
 P 10700 3705
 F 0 "D1" H 10700 3805 40  0000 C CNN
@@ -952,7 +983,7 @@ F 3 "" H 10700 3705 60  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L PSLab-rescue:GND-RESCUE-proto1 #PWR036
+L GND-RESCUE-proto1 #PWR036
 U 1 1 55BAC428
 P 10700 3845
 F 0 "#PWR036" H 10700 3845 30  0001 C CNN
@@ -963,7 +994,7 @@ F 3 "" H 10700 3845 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L PSLab-rescue:ZENERsmall-RESCUE-proto1 D2
+L ZENERsmall-RESCUE-proto1 D2
 U 1 1 55BACB8F
 P 10700 4760
 F 0 "D2" H 10700 4860 40  0000 C CNN
@@ -974,7 +1005,7 @@ F 3 "" H 10700 4760 60  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L PSLab-rescue:GND-RESCUE-proto1 #PWR037
+L GND-RESCUE-proto1 #PWR037
 U 1 1 55BACCF3
 P 10700 4875
 F 0 "#PWR037" H 10700 4875 30  0001 C CNN
@@ -991,7 +1022,7 @@ VR+
 Text GLabel 6085 6165 0    40   Input ~ 0
 AN8
 $Comp
-L power:PWR_FLAG #FLG038
+L PWR_FLAG #FLG038
 U 1 1 55BC0DD9
 P 11040 2990
 F 0 "#FLG038" H 11040 3085 30  0001 C CNN
@@ -1002,7 +1033,7 @@ F 3 "" H 11040 2990 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:PWR_FLAG #FLG039
+L PWR_FLAG #FLG039
 U 1 1 55BC113E
 P 11030 4125
 F 0 "#FLG039" H 11030 4220 30  0001 C CNN
@@ -1023,7 +1054,7 @@ AN8
 Text GLabel 6085 6565 0    40   Input ~ 0
 MIC
 $Comp
-L PSLab-rescue:INDUCTOR_SMALL L1
+L INDUCTOR_SMALL L1
 U 1 1 55C0F620
 P 2660 5970
 F 0 "L1" H 2660 6070 50  0000 C CNN
@@ -1050,7 +1081,7 @@ CH1
 Text GLabel 6085 7065 0    40   Input ~ 0
 ACH1
 $Comp
-L power:PWR_FLAG #FLG040
+L PWR_FLAG #FLG040
 U 1 1 55EA2B09
 P 3060 5890
 F 0 "#FLG040" H 3060 5985 30  0001 C CNN
@@ -1065,7 +1096,7 @@ RP147
 Text GLabel 2800 3550 2    40   Output ~ 0
 SQ3
 $Comp
-L PSLab-rescue:R-RESCUE-proto1 R49
+L R-RESCUE-proto1 R49
 U 1 1 55F0DF55
 P 4650 5900
 F 0 "R49" V 4575 5900 40  0000 C CNN
@@ -1078,7 +1109,7 @@ $EndComp
 Text GLabel 4750 5200 3    47   Input ~ 0
 RP147
 $Comp
-L PSLab:LED-RESCUE-PSLab D3
+L LED-RESCUE-PSLab D3
 U 1 1 5660DA81
 P 9070 5520
 F 0 "D3" H 9070 5620 50  0000 C CNN
@@ -1089,7 +1120,7 @@ F 3 "" H 9070 5520 60  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L PSLab-rescue:R-RESCUE-proto1 R52
+L R-RESCUE-proto1 R52
 U 1 1 5660DDAE
 P 8620 5520
 F 0 "R52" V 8700 5520 40  0000 C CNN
@@ -1100,7 +1131,7 @@ F 3 "" H 8620 5520 30  0000 C CNN
 	0    1    -1   0   
 $EndComp
 $Comp
-L PSLab-rescue:GND-RESCUE-proto1 #PWR041
+L GND-RESCUE-proto1 #PWR041
 U 1 1 5660E9DB
 P 9270 5520
 F 0 "#PWR041" H 9270 5520 30  0001 C CNN
@@ -1111,7 +1142,7 @@ F 3 "" H 9270 5520 60  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L PSLab:LED-RESCUE-PSLab D4
+L LED-RESCUE-PSLab D4
 U 1 1 56612B89
 P 9070 5940
 F 0 "D4" H 9070 6040 50  0000 C CNN
@@ -1122,7 +1153,7 @@ F 3 "" H 9070 5940 60  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L PSLab-rescue:R-RESCUE-proto1 R53
+L R-RESCUE-proto1 R53
 U 1 1 56612DC3
 P 8625 5940
 F 0 "R53" V 8705 5940 40  0000 C CNN
@@ -1133,7 +1164,7 @@ F 3 "" H 8625 5940 30  0000 C CNN
 	0    1    -1   0   
 $EndComp
 $Comp
-L PSLab-rescue:GND-RESCUE-proto1 #PWR042
+L GND-RESCUE-proto1 #PWR042
 U 1 1 566130A1
 P 9270 5940
 F 0 "#PWR042" H 9270 5940 30  0001 C CNN
@@ -1146,7 +1177,7 @@ $EndComp
 Text GLabel 8175 5940 0    40   Input ~ 0
 +5V
 $Comp
-L PSLab-rescue:R-RESCUE-proto1 R55
+L R-RESCUE-proto1 R55
 U 1 1 566549A7
 P 6525 850
 F 0 "R55" V 6605 850 40  0000 C CNN
@@ -1157,7 +1188,7 @@ F 3 "" H 6525 850 30  0000 C CNN
 	0    1    -1   0   
 $EndComp
 $Comp
-L PSLab-rescue:R-RESCUE-proto1 R57
+L R-RESCUE-proto1 R57
 U 1 1 56654C7F
 P 7775 850
 F 0 "R57" V 7855 850 40  0000 C CNN
@@ -1168,7 +1199,7 @@ F 3 "" H 7775 850 30  0000 C CNN
 	0    1    -1   0   
 $EndComp
 $Comp
-L PSLab-rescue:R-RESCUE-proto1 R54
+L R-RESCUE-proto1 R54
 U 1 1 56655363
 P 6525 650
 F 0 "R54" V 6605 650 40  0000 C CNN
@@ -1179,7 +1210,7 @@ F 3 "" H 6525 650 30  0000 C CNN
 	0    1    -1   0   
 $EndComp
 $Comp
-L PSLab-rescue:R-RESCUE-proto1 R56
+L R-RESCUE-proto1 R56
 U 1 1 5665622A
 P 7775 650
 F 0 "R56" V 7855 650 40  0000 C CNN
@@ -1190,7 +1221,7 @@ F 3 "" H 7775 650 30  0000 C CNN
 	0    1    -1   0   
 $EndComp
 $Comp
-L PSLab-rescue:PIC24EP256GP204 U3
+L PIC24EP256GP204 U3
 U 1 1 5426ECFF
 P 4950 3900
 F 0 "U3" H 4950 3800 50  0000 C CNN
@@ -1213,7 +1244,7 @@ Status LED
 Text Notes 11095 5130 2    60   ~ 0
 Mounting Holes
 $Comp
-L PSLab-rescue:GND-RESCUE-proto1 #PWR043
+L GND-RESCUE-proto1 #PWR043
 U 1 1 556DA7E3
 P 1860 1140
 F 0 "#PWR043" H 1860 1140 30  0001 C CNN
@@ -1224,7 +1255,7 @@ F 3 "" H 1860 1140 60  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L PSLab-rescue:MMBT3904 Q2
+L MMBT3904 Q2
 U 1 1 5A319DE9
 P 10700 3125
 F 0 "Q2" V 10905 2980 50  0000 L CNN
@@ -1235,7 +1266,7 @@ F 3 "" H 10700 3125 50  0001 L CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L PSLab-rescue:MMBT3906 Q3
+L MMBT3906 Q3
 U 1 1 5A31A318
 P 10700 4235
 F 0 "Q3" V 10905 4110 50  0000 L CNN
@@ -1248,7 +1279,7 @@ $EndComp
 Text Label 7485 1685 0    60   ~ 0
 ESPROG
 $Comp
-L PSLab-rescue:CONN_1 MH2
+L CONN_1 MH2
 U 1 1 5A553341
 P 10175 5385
 F 0 "MH2" V 10235 5325 40  0000 L CNN
@@ -1263,7 +1294,7 @@ FCin
 Text GLabel 4650 6210 3    40   Input ~ 0
 FCin
 $Comp
-L PSLab-rescue:Conn_01x06 J1
+L Conn_01x06 J1
 U 1 1 5A56B55E
 P 5570 7180
 F 0 "J1" H 5570 7480 50  0000 C CNN
@@ -1274,7 +1305,7 @@ F 3 "" H 5570 7180 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L PSLab-rescue:GND-RESCUE-proto1 #PWR044
+L GND-RESCUE-proto1 #PWR044
 U 1 1 5A56D115
 P 5370 7180
 F 0 "#PWR044" H 5370 7180 30  0001 C CNN
@@ -1289,7 +1320,7 @@ MCLR
 Text GLabel 4545 815  0    40   Input ~ 0
 MCLR
 $Comp
-L PSLab-rescue:Conn_01x04 J6
+L Conn_01x04 J6
 U 1 1 5A584DF9
 P 4960 7185
 F 0 "J6" H 4960 7385 50  0000 C CNN
@@ -1300,7 +1331,7 @@ F 3 "" H 4960 7185 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L PSLab-rescue:GND-RESCUE-proto1 #PWR045
+L GND-RESCUE-proto1 #PWR045
 U 1 1 5A56FD6E
 P 10175 5535
 F 0 "#PWR045" H 10175 5535 30  0001 C CNN
@@ -1311,7 +1342,7 @@ F 3 "" H 10175 5535 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L PSLab-rescue:GND-RESCUE-proto1 #PWR046
+L GND-RESCUE-proto1 #PWR046
 U 1 1 5A5701EC
 P 10480 5535
 F 0 "#PWR046" H 10480 5535 30  0001 C CNN
@@ -1322,7 +1353,7 @@ F 3 "" H 10480 5535 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L PSLab-rescue:TEST TP3
+L TEST TP3
 U 1 1 5A66A817
 P 850 1930
 F 0 "TP3" H 850 2230 50  0000 C BNN
@@ -1333,7 +1364,7 @@ F 3 "" H 850 1930 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L PSLab-rescue:TEST TP4
+L TEST TP4
 U 1 1 5A66B7F8
 P 2285 1925
 F 0 "TP4" H 2285 2225 50  0000 C BNN
@@ -1344,7 +1375,7 @@ F 3 "" H 2285 1925 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L PSLab-rescue:GND-RESCUE-proto1 #PWR047
+L GND-RESCUE-proto1 #PWR047
 U 1 1 5A66B8E0
 P 2285 1925
 F 0 "#PWR047" H 2285 1925 30  0001 C CNN
@@ -1355,7 +1386,7 @@ F 3 "" H 2285 1925 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L PSLab-rescue:USB-MINI-B CON1
+L USB-MINI-B CON1
 U 1 1 5A6CB48C
 P 1360 1240
 F 0 "CON1" H 1060 1590 50  0000 C CNN
@@ -1366,7 +1397,7 @@ F 3 "" H 1360 1140 50  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L PSLab-rescue:R-RESCUE-proto1 R48
+L R-RESCUE-proto1 R48
 U 1 1 5A6CD97F
 P 3365 2600
 F 0 "R48" V 3445 2600 50  0000 C CNN
@@ -1379,7 +1410,7 @@ $EndComp
 Text Label 3615 2600 0    60   ~ 0
 Vdd
 $Comp
-L device:Crystal Y1
+L Crystal Y1
 U 1 1 5A6D25F9
 P 1715 2155
 F 0 "Y1" H 1715 2305 50  0000 C CNN
@@ -1390,7 +1421,7 @@ F 3 "" H 1715 2155 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L PSLab-rescue:C-RESCUE-proto1 C3
+L C-RESCUE-proto1 C3
 U 1 1 5A6D2A55
 P 1425 2380
 F 0 "C3" H 1450 2480 50  0000 L CNN
@@ -1401,7 +1432,7 @@ F 3 "" H 1425 2380 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L PSLab-rescue:C-RESCUE-proto1 C43
+L C-RESCUE-proto1 C43
 U 1 1 5A6D2B78
 P 1965 2365
 F 0 "C43" H 1990 2465 50  0000 L CNN
@@ -1412,7 +1443,7 @@ F 3 "" H 1965 2365 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L PSLab-rescue:GND-RESCUE-proto1 #PWR048
+L GND-RESCUE-proto1 #PWR048
 U 1 1 5A6D3C13
 P 1695 2665
 F 0 "#PWR048" H 1695 2665 30  0001 C CNN
@@ -1431,7 +1462,7 @@ OS1
 Text GLabel 2950 2480 3    39   Input ~ 0
 OS2
 $Comp
-L PSLab-rescue:TEST_1P J13
+L TEST_1P J13
 U 1 1 5A6F40E4
 P 2085 1020
 F 0 "J13" H 2170 1115 50  0000 C CNN
@@ -1442,7 +1473,7 @@ F 3 "" H 2285 1020 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L PSLab-rescue:TEST_1P J14
+L TEST_1P J14
 U 1 1 5A6F42FD
 P 2525 1005
 F 0 "J14" H 2605 1095 50  0000 C CNN
@@ -1453,7 +1484,7 @@ F 3 "" H 2725 1005 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L PSLab-rescue:TEST_1P J11
+L TEST_1P J11
 U 1 1 5A6F5463
 P 1850 1875
 F 0 "J11" H 1850 2145 50  0000 C CNN
@@ -1464,7 +1495,7 @@ F 3 "" H 2050 1875 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L PSLab-rescue:TEST_1P J10
+L TEST_1P J10
 U 1 1 5A6F58A7
 P 690 1220
 F 0 "J10" H 690 1490 50  0000 C CNN
@@ -1475,7 +1506,7 @@ F 3 "" H 890 1220 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L PSLab-rescue:GND-RESCUE-proto1 #PWR049
+L GND-RESCUE-proto1 #PWR049
 U 1 1 5A6F58C4
 P 10785 5535
 F 0 "#PWR049" H 10785 5535 30  0001 C CNN
@@ -1486,7 +1517,7 @@ F 3 "" H 10785 5535 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L PSLab-rescue:GND-RESCUE-proto1 #PWR050
+L GND-RESCUE-proto1 #PWR050
 U 1 1 5A6F5AA9
 P 9865 5540
 F 0 "#PWR050" H 9865 5540 30  0001 C CNN
@@ -1507,7 +1538,7 @@ Vdd
 Text Label 5370 7080 2    60   ~ 0
 Vdd
 $Comp
-L PSLab-rescue:Conn_01x04 J16
+L Conn_01x04 J16
 U 1 1 5AD47B2C
 P 4395 7180
 F 0 "J16" H 4395 7380 50  0000 C CNN
@@ -1518,7 +1549,7 @@ F 3 "" H 4395 7180 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L PSLab-rescue:GND-RESCUE-proto1 #PWR051
+L GND-RESCUE-proto1 #PWR051
 U 1 1 5AD48170
 P 4195 7080
 F 0 "#PWR051" H 4195 7080 30  0001 C CNN
@@ -1535,7 +1566,7 @@ SCL
 Text Label 4195 7380 2    60   ~ 0
 SDA
 $Comp
-L PSLab-rescue:GND-RESCUE-proto1 #PWR052
+L GND-RESCUE-proto1 #PWR052
 U 1 1 5AD4BD5F
 P 6875 1895
 F 0 "#PWR052" H 6875 1895 30  0001 C CNN
@@ -1548,7 +1579,7 @@ $EndComp
 Text GLabel 6775 1895 1    40   Input ~ 0
 +5V
 $Comp
-L PSLab-rescue:Conn_01x04 J3
+L Conn_01x04 J3
 U 1 1 5AD4C0DD
 P 935 5035
 F 0 "J3" H 935 5235 50  0000 C CNN
@@ -1599,7 +1630,7 @@ SEN
 Text GLabel 6085 6265 0    40   Input ~ 0
 SEN
 $Comp
-L PSLab-rescue:Conn_02x14_Odd_Even J2
+L Conn_02x14_Odd_Even J2
 U 1 1 5ADBCA02
 P 6285 6765
 F 0 "J2" H 6335 7465 50  0000 C CNN
@@ -1612,7 +1643,7 @@ $EndComp
 Text Notes 555  4375 0    60   ~ 0
 Logic Analyzer
 $Comp
-L PSLab-rescue:C-RESCUE-proto1 C21
+L C-RESCUE-proto1 C21
 U 1 1 5ADD022E
 P 3550 4850
 F 0 "C21" H 3550 4950 40  0000 L CNN
@@ -1623,7 +1654,7 @@ F 3 "" H 3550 4850 60  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L PSLab-rescue:C-RESCUE-proto1 C15
+L C-RESCUE-proto1 C15
 U 1 1 5ADD1134
 P 2195 6275
 F 0 "C15" H 2195 6375 40  0000 L CNN
@@ -1634,7 +1665,7 @@ F 3 "" H 2195 6275 60  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L PSLab-rescue:GND-RESCUE-proto1 #PWR053
+L GND-RESCUE-proto1 #PWR053
 U 1 1 5564F446
 P 8350 1225
 F 0 "#PWR053" H 8350 1225 30  0001 C CNN
@@ -1645,7 +1676,7 @@ F 3 "" H 8350 1225 60  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L PSLab-rescue:C-RESCUE-proto1 C2
+L C-RESCUE-proto1 C2
 U 1 1 5564F04A
 P 8550 1225
 F 0 "C2" H 8550 1325 40  0000 L CNN
@@ -1723,13 +1754,13 @@ Connection ~ 9300 4400
 Wire Wire Line
 	3050 950  3050 650 
 Wire Wire Line
-	6400 2850 6525 2850
+	6400 2850 6750 2850
 Connection ~ 6525 2850
 Wire Wire Line
-	6500 2625 6625 2625
+	6500 2625 6750 2625
 Connection ~ 6625 2625
 Wire Wire Line
-	7250 2625 7250 2750
+	7250 2625 7250 2850
 Wire Wire Line
 	7250 2750 7400 2750
 Connection ~ 7250 2750
@@ -1742,14 +1773,14 @@ Wire Wire Line
 Wire Wire Line
 	9925 2800 10030 2800
 Wire Wire Line
-	9050 4400 9300 4400
+	9050 4400 9370 4400
 Wire Wire Line
 	9870 4400 10025 4400
 Connection ~ 9870 4400
 Wire Wire Line
 	8900 1225 8750 1225
 Wire Wire Line
-	8500 1725 8750 1725
+	8500 1725 8900 1725
 Connection ~ 8750 1725
 Wire Wire Line
 	3550 4650 3550 4000
@@ -1776,11 +1807,11 @@ Wire Wire Line
 Wire Wire Line
 	3100 3600 3650 3600
 Wire Wire Line
-	2350 3550 2750 3550
+	2350 3550 2800 3550
 Wire Wire Line
 	3175 4100 3175 4450
 Wire Wire Line
-	2525 3800 3375 3800
+	2525 3800 3650 3800
 Wire Wire Line
 	3100 3600 3100 3125
 Wire Wire Line
@@ -1792,16 +1823,16 @@ Wire Wire Line
 Wire Wire Line
 	1600 3650 1600 3350
 Wire Wire Line
-	1275 3350 1600 3350
+	1275 3350 1650 3350
 Wire Wire Line
 	2475 3750 2350 3750
 Wire Wire Line
-	2475 3210 2475 3350
+	2475 3210 2475 3750
 Wire Wire Line
 	2350 3450 2475 3450
 Connection ~ 1600 3350
 Wire Wire Line
-	8750 1225 8750 1725
+	8750 1225 8750 1925
 Wire Wire Line
 	9600 1525 9700 1525
 Wire Wire Line
@@ -1819,11 +1850,11 @@ Wire Wire Line
 Wire Wire Line
 	6750 3600 6250 3600
 Wire Wire Line
-	1895 5970 2030 5970
+	1895 5970 2410 5970
 Wire Wire Line
-	6250 4300 6525 4300
+	6250 4300 6750 4300
 Wire Wire Line
-	6250 4100 6825 4100
+	6250 4100 7050 4100
 Wire Wire Line
 	8025 2900 8025 3325
 Wire Wire Line
@@ -1881,9 +1912,9 @@ Wire Wire Line
 Wire Wire Line
 	5700 650  6275 650 
 Wire Wire Line
-	6775 650  7075 650 
+	6775 650  7525 650 
 Wire Wire Line
-	6775 850  6975 850 
+	6775 850  7525 850 
 Wire Wire Line
 	6275 850  5800 850 
 Wire Wire Line
@@ -1950,7 +1981,7 @@ Connection ~ 9925 3025
 Wire Wire Line
 	9925 2800 9925 3025
 Wire Wire Line
-	9665 3025 9925 3025
+	9665 3025 10500 3025
 Wire Wire Line
 	9870 4800 9870 4830
 Wire Wire Line
@@ -1960,19 +1991,19 @@ Wire Wire Line
 Wire Wire Line
 	10900 3025 11040 3025
 Wire Wire Line
-	11040 2990 11040 3025
+	11040 2990 11040 3125
 Connection ~ 11040 3025
 Wire Wire Line
-	11030 4125 11030 4135
+	11030 4125 11030 4245
 Wire Wire Line
 	10900 4135 11030 4135
 Connection ~ 11030 4135
 Wire Wire Line
-	9665 4135 9870 4135
+	9665 4135 10500 4135
 Wire Wire Line
 	10385 4135 10385 4150
 Wire Wire Line
-	10700 4435 10700 4650
+	10700 4435 10700 4660
 Wire Wire Line
 	10700 4860 10700 4875
 Connection ~ 10385 4135
@@ -1982,7 +2013,7 @@ Connection ~ 10700 4650
 Wire Wire Line
 	10700 3805 10700 3845
 Wire Wire Line
-	10700 3325 10700 3590
+	10700 3325 10700 3605
 Connection ~ 10700 3590
 Connection ~ 9870 4135
 Wire Wire Line
@@ -1995,9 +2026,9 @@ Wire Wire Line
 Wire Wire Line
 	2250 1240 1860 1240
 Wire Wire Line
-	2250 825  2250 1020
+	2250 825  2250 1240
 Wire Wire Line
-	2390 700  2390 1005
+	2390 700  2390 1340
 Wire Wire Line
 	2390 1340 1860 1340
 Wire Wire Line
@@ -2005,7 +2036,7 @@ Wire Wire Line
 Wire Wire Line
 	865  1140 860  1140
 Wire Wire Line
-	1605 1930 1850 1930
+	1605 1930 2035 1930
 Wire Wire Line
 	2035 1930 2035 1440
 Wire Wire Line
@@ -2027,11 +2058,13 @@ Wire Wire Line
 Wire Wire Line
 	2505 3210 2475 3210
 Wire Wire Line
-	2350 3350 2475 3350
+	2350 3350 2550 3350
 Connection ~ 2475 3350
 Connection ~ 2475 3450
 Wire Wire Line
 	8210 1685 8210 2025
+Wire Wire Line
+	9870 4135 9870 4135
 Wire Wire Line
 	9870 4135 9870 4400
 Wire Wire Line
@@ -2039,7 +2072,7 @@ Wire Wire Line
 Wire Wire Line
 	4605 815  4545 815 
 Wire Wire Line
-	860  1040 860  1140
+	860  1040 860  1520
 Connection ~ 860  1440
 Connection ~ 860  1340
 Connection ~ 860  1140
@@ -2048,11 +2081,11 @@ Wire Wire Line
 Wire Wire Line
 	3050 2600 3115 2600
 Wire Wire Line
-	1865 2155 1965 2155
+	1865 2155 2050 2155
 Wire Wire Line
-	1380 2155 1425 2155
+	1380 2155 1565 2155
 Wire Wire Line
-	1425 2595 1695 2595
+	1425 2595 1965 2595
 Wire Wire Line
 	1695 2665 1695 2595
 Connection ~ 1695 2595
@@ -2087,12 +2120,12 @@ Wire Wire Line
 Wire Notes Line
 	535  5585 3715 5585
 Wire Wire Line
-	2910 5970 3060 5970
+	2910 5970 3210 5970
 Wire Wire Line
 	3060 5890 3060 5970
 Connection ~ 3060 5970
 Wire Wire Line
-	2195 5905 2195 5970
+	2195 5905 2195 6075
 Connection ~ 2195 5970
 Wire Wire Line
 	1895 6070 2030 6070
@@ -2108,10 +2141,10 @@ Wire Wire Line
 Wire Wire Line
 	3400 5050 2465 5050
 Wire Wire Line
-	6975 1895 6975 1495
+	6975 1895 6975 850 
 Connection ~ 6975 850 
 Wire Wire Line
-	7075 1895 7075 1495
+	7075 1895 7075 650 
 Connection ~ 7075 650 
 Wire Wire Line
 	1650 3550 1415 3550
@@ -2146,7 +2179,7 @@ Wire Wire Line
 Wire Wire Line
 	6585 6165 6695 6165
 Wire Wire Line
-	6695 6165 6695 6265
+	6695 6165 6695 7525
 Wire Wire Line
 	6695 7465 6585 7465
 Wire Wire Line
@@ -2215,7 +2248,7 @@ NoConn ~ 6250 4400
 Text GLabel 2450 2450 0    47   Input ~ 0
 Vdd
 $Comp
-L PSLab-rescue:Conn_01x06 J5
+L Conn_01x06 J5
 U 1 1 5ADB5C89
 P 1130 7280
 F 0 "J5" H 1130 7580 50  0000 C CNN
@@ -2240,7 +2273,7 @@ Connection ~ 7075 1495
 Text GLabel 1330 7380 2    40   Input ~ 0
 +5V
 $Comp
-L PSLab-rescue:GND-RESCUE-proto1 #PWR054
+L GND-RESCUE-proto1 #PWR054
 U 1 1 5ADB8677
 P 1330 7280
 F 0 "#PWR054" H 1330 7280 30  0001 C CNN
@@ -2261,7 +2294,7 @@ Vdd
 Wire Wire Line
 	7175 1685 7175 1895
 $Comp
-L PSLab-rescue:Conn_01x07 J7
+L Conn_01x07 J7
 U 1 1 5ADC9D4E
 P 6975 2095
 F 0 "J7" H 6975 2495 50  0000 C CNN
@@ -2272,7 +2305,7 @@ F 3 "" H 6975 2095 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L PSLab-rescue:GND-RESCUE-proto1 #PWR055
+L GND-RESCUE-proto1 #PWR055
 U 1 1 5ADCA5FB
 P 7275 1895
 F 0 "#PWR055" H 7275 1895 30  0001 C CNN
@@ -2283,7 +2316,7 @@ F 3 "" H 7275 1895 60  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L PSLab-rescue:TEST TP5
+L TEST TP5
 U 1 1 5B7D9513
 P 10015 6115
 F 0 "TP5" H 10015 6415 50  0000 C BNN
@@ -2294,7 +2327,7 @@ F 3 "" H 10015 6115 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L PSLab-rescue:TEST TP6
+L TEST TP6
 U 1 1 5B7D967A
 P 10335 6115
 F 0 "TP6" H 10335 6415 50  0000 C BNN
@@ -2305,7 +2338,7 @@ F 3 "" H 10335 6115 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L PSLab-rescue:TEST TP7
+L TEST TP7
 U 1 1 5B7D97E1
 P 10665 6115
 F 0 "TP7" H 10665 6415 50  0000 C BNN
@@ -2324,110 +2357,4 @@ U 5C27B0EA
 F0 "Logos" 61
 F1 "Logos.sch" 61
 $EndSheet
-Wire Wire Line
-	9300 4400 9370 4400
-Wire Wire Line
-	6525 2850 6750 2850
-Wire Wire Line
-	6625 2625 6750 2625
-Wire Wire Line
-	7250 2750 7250 2850
-Wire Wire Line
-	8750 1725 8900 1725
-Wire Wire Line
-	8750 1725 8750 1925
-Wire Wire Line
-	1600 3350 1650 3350
-Wire Wire Line
-	6825 4100 7050 4100
-Wire Wire Line
-	3375 3800 3650 3800
-Wire Wire Line
-	9925 3025 10360 3025
-Wire Wire Line
-	11040 3025 11040 3125
-Wire Wire Line
-	11030 4135 11030 4245
-Wire Wire Line
-	10385 4135 10500 4135
-Wire Wire Line
-	10700 4650 10700 4660
-Wire Wire Line
-	10700 3590 10700 3605
-Wire Wire Line
-	9870 4135 10385 4135
-Wire Wire Line
-	10360 3025 10500 3025
-Wire Wire Line
-	2475 3350 2475 3450
-Wire Wire Line
-	2475 3350 2550 3350
-Wire Wire Line
-	2475 3450 2475 3750
-Wire Wire Line
-	860  1440 860  1520
-Wire Wire Line
-	860  1340 860  1440
-Wire Wire Line
-	860  1140 860  1220
-Wire Wire Line
-	1695 2595 1965 2595
-Wire Wire Line
-	2390 1005 2390 1340
-Wire Wire Line
-	2250 1020 2250 1240
-Wire Wire Line
-	860  1220 860  1340
-Wire Wire Line
-	1850 1930 2035 1930
-Wire Wire Line
-	3060 5970 3210 5970
-Wire Wire Line
-	2195 5970 2410 5970
-Wire Wire Line
-	2195 5970 2195 6075
-Wire Wire Line
-	2030 5970 2195 5970
-Wire Wire Line
-	6975 850  7525 850 
-Wire Wire Line
-	7075 650  7525 650 
-Wire Wire Line
-	2750 3550 2800 3550
-Wire Wire Line
-	6525 4300 6750 4300
-Wire Wire Line
-	6695 7365 6695 7465
-Wire Wire Line
-	6695 7265 6695 7365
-Wire Wire Line
-	6695 7165 6695 7265
-Wire Wire Line
-	6695 7065 6695 7165
-Wire Wire Line
-	6695 6965 6695 7065
-Wire Wire Line
-	6695 6865 6695 6965
-Wire Wire Line
-	6695 6765 6695 6865
-Wire Wire Line
-	6695 6665 6695 6765
-Wire Wire Line
-	6695 6565 6695 6665
-Wire Wire Line
-	6695 6465 6695 6565
-Wire Wire Line
-	6695 6365 6695 6465
-Wire Wire Line
-	6695 6265 6695 6365
-Wire Wire Line
-	6695 7465 6695 7525
-Wire Wire Line
-	1425 2155 1565 2155
-Wire Wire Line
-	1965 2155 2050 2155
-Wire Wire Line
-	6975 1495 6975 850 
-Wire Wire Line
-	7075 1495 7075 650 
 $EndSCHEMATC
